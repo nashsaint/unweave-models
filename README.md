@@ -55,6 +55,7 @@ outputs `freq` and `time`. These are not generic waveform-only Core ML models.
 
 ```sh
 python3 -m unittest discover -s tests -v
+swift scripts/check_models.swift dist/models-v1  # compile and load the actual downloads
 ```
 
 See LICENSE and THIRD_PARTY_NOTICES.md for model attribution.
