@@ -27,7 +27,9 @@ user's machine.
 
 ## Publish to GitHub
 
-Install GitHub CLI (`brew install gh`) and authenticate (`gh auth login`). Commit
+Install GitHub CLI (`brew install gh`). The publisher reuses an existing GitHub CLI
+login or the system Git credential helper without storing another token. If
+neither is signed in, run `gh auth login`. Commit
 and push this repository's source, then run:
 
 ```sh
